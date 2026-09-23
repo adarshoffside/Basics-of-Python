@@ -53,3 +53,12 @@ print(student)
 
 #Get()
 print(student.get('NAME'))
+
+
+#pop
+student.pop('ROLL NO.')
+print(student)      
+
+#pop item
+student.popitem()
+print(student)
