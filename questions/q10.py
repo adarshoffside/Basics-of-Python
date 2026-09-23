@@ -1,0 +1,6 @@
+n = int(input("n:"))
+D=str(n)
+mx = int(max(D))
+mn = int(min(D))
+print("max=",mx)
+print("min =",mn)
