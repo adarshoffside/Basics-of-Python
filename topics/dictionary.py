@@ -1,21 +1,20 @@
-student = {'NAME': 'Adarsh Yadav'  ,
-           'REGISTRATION NO.': 12345678,
-           'ROLL NO.': 49,
-           'SECTION': 'K3P26BT',
-           'BRANCH': 'CSE'
-           }
+student = {
+    'NAME': 'Adarsh Yadav',
+    'REGISTRATION NO.': 12345678,
+    'ROLL NO.': 49,
+    'SECTION': 'K3P26BT',
+    'BRANCH': 'CSE'
+}
 
 print(student)
 
-#length
-
+# LENGTH
 print(len(student))
 
-#DICTIONARY IS MUTABLE
 
-#ACCESS VALUE FROM SPECIFIED KEY. HOW?
-#HERE IT IS ->
+# DICTIONARY IS MUTABLE
 
+# ACCESS VALUE FROM SPECIFIED KEY
 print(student['NAME'])
 print(student['REGISTRATION NO.'])
 print(student['SECTION'])
@@ -23,42 +22,53 @@ print(student['ROLL NO.'])
 print(student['BRANCH'])
 
 
-
-#ADD NEW KEY VALUE PAIR.?
-
+# ADD NEW KEY-VALUE PAIR
 student['CGPA'] = 9.3
 
-
-#FOR VERIFYING IT IS ADDED OR NOT WE WILL PRINT IT AGAIN TO SEE THAT.
-
-
-#UPDATE VALUE FOR ANY SPECIFIED KEY
-
-student['BRANCH'] = 'CSE AI& ML'
+# VERIFY THAT CGPA IS ADDED
 print(student)
 
-#KEYS()
 
+# UPDATE VALUE FOR A SPECIFIED KEY
+student['BRANCH'] = 'CSE AI & ML'
+print(student)
+
+
+# KEYS()
 print(student.keys())
 
-#VALUES()
+
+# VALUES()
 print(student.values())
 
-#ITEMS
+
+# ITEMS()
 print(student.items())
 
-#Update()
+
+# UPDATE()
 student.update({'CGPA': 9.5})
 print(student)
 
-#Get()
+
+# GET()
 print(student.get('NAME'))
 
 
-#pop
+# POP()
 student.pop('ROLL NO.')
-print(student)      
+print(student)
 
-#pop item
+
+# POPITEM()
 student.popitem()
 print(student)
+
+
+ #COPY
+student1 = student.copy()
+print(student1)
+
+#CLEAR
+student1.clear()
+print(student1)
